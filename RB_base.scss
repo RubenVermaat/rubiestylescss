@@ -45,6 +45,23 @@
     flex-grow: 3;
 }
 
+//Text
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.width-full {
+    width: 100%;
+}
+
 //Flex grid
 .flex-grid {
     flex-direction: row;
@@ -79,19 +96,6 @@
 
 .float-left {
     float: left;
-}
-
-//Text
-.text-center {
-    text-align: center;
-}
-
-.text-white {
-    color: white;
-}
-
-.width-full {
-    width: 100%;
 }
 
 //Buttons
@@ -162,9 +166,13 @@ img{
     }
 }
 
+//Sidebar
 .sidebar {
     padding: 25px;
 }
 .sidebar-left{
+    margin-right: 15px;
+}
+.sidebar-right {
     margin-right: 15px;
 }
