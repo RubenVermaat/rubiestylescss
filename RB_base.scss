@@ -1,0 +1,170 @@
+@import 'RB_variables';
+
+// Generic flex
+.flex {
+    display: flex;
+
+    &.row {
+        flex-direction: row;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.center {
+        align-items: center;
+    }
+
+    &.justify-content-center {
+        justify-content: center;
+    }
+
+    &.justify-content-space-between {
+        justify-content: space-between
+    }
+
+    &.justify-content-space-around {
+        justify-content: space-around
+    }
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+
+.flex-grow-one {
+    flex-grow: 1;
+}
+
+.flex-grow-two {
+    flex-grow: 2;
+}
+
+.flex-grow-three {
+    flex-grow: 3;
+}
+
+//Flex grid
+.flex-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+.flex-card{
+    &.medium {
+        min-width: 10%;
+        max-width: 15%;
+        max-height: 15%;
+        margin: 15px;
+        padding: 15px;
+    }
+    &.big {
+        min-width: 20%;
+        max-width: 25%;
+        max-height: 25%;
+        margin: 25px;
+        padding: 25px;
+    }
+
+    &:hover {
+        padding: 5px;
+        border: 1px solid black;
+    }
+}
+//Positions
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+//Text
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.width-full {
+    width: 100%;
+}
+
+//Buttons
+.btn {
+    padding: 10px;
+    margin: 5px;
+}
+
+//Sections
+body {
+    background-color: white;
+    color: $main-color;
+    margin: 0 0 100px 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+footer {
+    background-color: $main-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 700;
+}
+
+table {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+
+    th {
+        text-align: left;
+        background-color: $second-color;
+        color: white;
+        padding: 10px;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    tr {
+        &:nth-child(even) {
+            background-color: #80c4e9;
+        }
+
+        &.average {
+            background-color: $third-color;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+//Images
+img{
+    width: 100%;
+    &.img-small {
+        width: 25%;
+    }
+}
+
+.sidebar {
+    padding: 25px;
+}
+.sidebar-left{
+    margin-right: 15px;
+}
