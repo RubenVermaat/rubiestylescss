@@ -1,5 +1,4 @@
-@import 'RB_variables';
-
+@import '../RB_variables.scss';
 // Generic flex
 .flex {
     display: flex;
@@ -66,11 +65,6 @@
         margin: 25px;
         padding: 25px;
     }
-
-    &:hover {
-        padding: 5px;
-        border: 1px solid black;
-    }
 }
 //Positions
 .float-right {
@@ -109,7 +103,7 @@ body {
 }
 
 footer {
-    background-color: $main-color;
+    background-color: $third-color;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -159,6 +153,26 @@ img{
     width: 100%;
     &.img-small {
         width: 25%;
+    }
+}
+
+header {
+    padding: 0 25px;
+    background-color: $third-color;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+
+    .menu {
+        .menu-button{
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+    .logo {
+        max-height: 75px;
+        max-width: 125px;
     }
 }
 

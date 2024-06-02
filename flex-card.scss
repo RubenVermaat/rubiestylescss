@@ -1,0 +1,23 @@
+@import '../RB_variables.scss';
+.flex-card {
+    .product-price {
+        font-weight: bold;
+        background-color: rgb(155, 31, 42);
+        max-width: 75px;
+        font-size: 24px;
+        padding: 15px;
+        color: white;
+        position: relative;
+        bottom: 1px;
+    }
+    .product-image {
+        overflow: hidden;
+        clip-path: xywh(0 5px 100% 75% round 15% 0);
+    }
+    &:hover {
+        padding: 10px;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+}
